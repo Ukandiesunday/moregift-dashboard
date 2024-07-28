@@ -1,0 +1,128 @@
+.verifyEmail {
+  background: #f6f9fc;
+  height: 500px;
+  margin: 30px auto 30px auto;
+  display: flex;
+  padding: 0px 8%;
+  max-width: 1474px;
+
+  .designContainer {
+    flex-basis: 50%;
+  }
+  .formRight {
+    flex-basis: 50%;
+    height: 100%;
+    .form {
+      display: flex;
+      flex-direction: column;
+      height: 500px;
+      padding: 80px 30px 40px 30px;
+      background: #ffff !important;
+      .title {
+        h2 {
+          text-align: left;
+          margin-bottom: 20px;
+          font-weight: 700;
+          line-height: 36px;
+          color: #191c2d;
+        }
+        .backToHome {
+          display: none;
+
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+          color: #159557;
+          text-align: right;
+          text-transform: capitalize;
+
+          position: relative;
+          bottom: 50px;
+        }
+      }
+      .formItem {
+        background: #ffff;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .mailHead {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          h3 {
+            color: #3b3f4a;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+          }
+          p {
+            color: #5c6271;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 22px;
+          }
+        }
+
+        .expiresCode {
+          color: #5c6271;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 22px;
+          text-align: center;
+          span {
+            font-size: 14px;
+            font-weight: 700;
+            color: #3b3f4a;
+          }
+        }
+        .otpWrapper {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          justify-content: center;
+          .otp {
+            width: 40px;
+            height: 42px;
+            border: 1px solid #cbd1da;
+            border-radius: 5px;
+            background: #ffff;
+            text-align: center;
+            outline: none;
+            // caret-color: transparent;
+          }
+        }
+        .resend {
+          border: none;
+          color: #159557;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+          background: transparent;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .verifyEmail {
+    .designContainer {
+      display: none;
+    }
+    .formRight {
+      flex-basis: 100%;
+      .form {
+        border-radius: 10px;
+        .title {
+          .backToHome {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

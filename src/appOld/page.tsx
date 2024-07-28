@@ -1,7 +1,9 @@
+import styles from "./page.module.css";
+
 export default function Home() {
   return (
-    <main className="">
-      <div>this home page</div>
+    <main className={styles.main}>
+      <h1>Moregift.App</h1>
     </main>
   );
 }

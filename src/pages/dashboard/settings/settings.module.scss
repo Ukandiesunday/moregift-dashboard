@@ -1,0 +1,118 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .title {
+    color: #17181d;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .tapsContainer {
+    display: flex;
+    gap: 40px;
+    box-shadow: 0px 1px 1.5px rgba(0, 0, 0, 0.05);
+    .taps {
+      color: #0b1a2d;
+      font-weight: 500;
+      line-height: 28px;
+      cursor: pointer;
+    }
+
+    .tapUnderline {
+      border-bottom: 2.5px solid #0aac6c;
+    }
+  }
+
+  .profileContainer {
+    .label {
+      .userInput {
+        display: none;
+      }
+    }
+    .bankName {
+      max-width: 700px;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-top: 20px;
+      :first-child {
+        font-size: 20px;
+        color: #374258;
+        font-weight: 700;
+      }
+      :last-child {
+        font-size: 16px;
+        font-weight: 600;
+        color: #75819a;
+      }
+    }
+  }
+
+  .securityContainer {
+    .securityContent {
+      max-width: 450px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .bankingInfoContainer {
+    .bankingInfoContent {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .bottom {
+        display: flex;
+        gap: 10px;
+        .bankDetails {
+          height: fit-content;
+          width: 230px !important;
+          background: #ffff;
+          padding: 8px 10px;
+          border-radius: 10px;
+          box-shadow: 0px 3px 10px rgba(64, 55, 98, 0.1);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .detailsWrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .details {
+              display: flex;
+              flex-direction: column;
+              gap: 4px;
+              :nth-child(1) {
+                font-size: 11px;
+                color: #3b3f4a;
+                font-weight: 700;
+              }
+              :nth-child(2),
+              :nth-child(3) {
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 500;
+                color: #5c6271;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

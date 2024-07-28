@@ -1,0 +1,17 @@
+.sideBar {
+  display: flex;
+
+  flex-direction: column;
+  width: 226px;
+  min-height: 820px;
+  height: 100%;
+  background: #1c1e26;
+  box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.1);
+  color: #d8dee8;
+  gap: 15px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  position: sticky;
+}

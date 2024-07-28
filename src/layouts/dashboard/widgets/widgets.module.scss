@@ -1,0 +1,67 @@
+.widgets {
+  display: flex;
+  gap: 17px;
+  width: 100%;
+
+  .items {
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0px 3px 12px rgba(15, 39, 255, 0.07);
+    border-radius: 10px;
+    background: #ffffff;
+    width: 100%;
+    padding: 15px;
+    gap: 10px;
+    &:nth-child(1) {
+      border-bottom: 6px solid #f5cd16;
+    }
+    &:nth-child(2) {
+      border-bottom: 6px solid #5868ff;
+    }
+    &:nth-child(3) {
+      border-bottom: 6px solid #16be6e;
+    }
+    &:nth-child(4) {
+      border-bottom: 6px solid #d3564e;
+    }
+    .title {
+      position: relative;
+      color: #97a0ab;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 27px;
+      display: flex;
+      h2 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 27px;
+      }
+      .img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+    .moneySign {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 27px;
+      color: #8a929c;
+      text-wrap: nowrap;
+      .amt {
+        color: #3b3f4a;
+        font-weight: 600;
+        line-height: 30px;
+        font-size: 18px;
+      }
+    }
+    .percent {
+      display: flex;
+      align-self: flex-end;
+      gap: 10px;
+      color: #8a929c;
+      font-weight: 500;
+    }
+  }
+}

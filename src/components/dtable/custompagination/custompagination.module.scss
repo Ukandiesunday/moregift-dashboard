@@ -1,0 +1,26 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #ffff;
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid #cbd1da;
+  padding: 15px;
+  .btnContainer {
+    display: flex;
+    button {
+      padding: 5px 10px;
+      border: 1px solid #cbd1da;
+      &:first-child {
+        border-radius: 5px 0 0 5px;
+      }
+      &:last-child {
+        border-radius: 0 5px 5px 0;
+      }
+    }
+    .activePage {
+      background: grey;
+      color: white;
+    }
+  }
+}

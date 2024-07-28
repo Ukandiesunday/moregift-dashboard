@@ -1,0 +1,104 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .topLeft {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .eventTitle {
+        font-size: 20px;
+        color: #36383e;
+        font-weight: 700;
+      }
+      .status {
+        font-size: 11px;
+        font-weight: 500;
+        padding: 2px 4px;
+        text-transform: uppercase;
+        border-radius: 3px;
+        border: 1px solid #ffd723;
+        background: #fffacb;
+      }
+    }
+    .topRight {
+      @extend .topLeft;
+    }
+  }
+  .timeDesc {
+    color: #383a41;
+    font-size: 14px;
+    padding: 15px;
+    box-shadow: 0px 3px 12px 0px rgba(15, 39, 255, 0.07);
+    border-radius: 10px;
+    border: 0px solid #dbdeeb;
+    font-style: normal;
+    font-weight: 500;
+    background-color: #ffff;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    span {
+      display: flex;
+      gap: 5px;
+    }
+    b {
+      color: #686971;
+    }
+  }
+  .totalSendingWrapper {
+    box-shadow: 0px 3px 12px 0px rgba(15, 39, 255, 0.07);
+    border-radius: 10px;
+    border: 0px solid #dbdeeb;
+    background-color: #ffff;
+    display: flex;
+
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    .totalSendingTitle {
+      justify-content: start;
+      color: #36383e;
+      font-weight: 700;
+    }
+    .totalSendingContent {
+      background: url(/images/mailback.png), #1c1e26;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 24px;
+      color: #dbdeeb;
+      font-weight: 700;
+    }
+  }
+  .noteWrapper {
+    @extend .totalSendingWrapper;
+    .noteContent {
+      color: #3b3f4a;
+      overflow: hidden;
+
+      text-overflow: ellipsis !important;
+
+      font-size: 14px;
+      font-weight: 500;
+      b {
+        font-size: 14px;
+
+        font-weight: 500;
+        color: #0057ff;
+      }
+    }
+    .noteTitle {
+      font-weight: 700;
+      color: #3b3f4a;
+    }
+  }
+}

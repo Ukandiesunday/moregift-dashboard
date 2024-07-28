@@ -1,0 +1,118 @@
+.tableWrapper {
+  padding-bottom: 15px;
+  border-radius: 10px;
+  background: #fff;
+  width: 100%;
+  .tableTop {
+    border-radius: 10px 10px 0 0;
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 15px;
+    align-items: center;
+    .topleft {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      .span1 {
+        font-weight: 700;
+        color: #3b3f4a;
+      }
+      .span2 {
+        color: #8a929c;
+        font-weight: 500;
+      }
+    }
+
+    .topright {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      .send {
+        display: flex;
+        align-items: center;
+        padding: 9px 15px;
+        border: 1px solid #cbd1da;
+        border-radius: 5px;
+        color: #5c6271;
+        font-size: 13px;
+        font-weight: 700;
+        gap: 10px;
+      }
+      .screen {
+        border: 1px solid #cbd1da;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+        .exitScreen {
+          width: 20px;
+          height: 20px;
+          color: #5c6271;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .tableContainer {
+    display: flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+    padding: 15px;
+    padding-bottom: 5px;
+    .table {
+      border-radius: 5px !important;
+      border: 1px solid #dbdeeb;
+
+      border-bottom: 1px solid #dbdeeb;
+      border-collapse: collapse;
+      margin-top: -15px;
+      th {
+        &:first-child {
+          margin-left: 10px;
+          width: 30px;
+          background-color: transparent;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .tableHeadContainer {
+        display: flex;
+        align-items: flex-start;
+        padding: 10px 0px 30px 0px;
+        height: 45px;
+      }
+
+      .tbodyRow {
+        position: relative;
+        border-top: 1px solid #dbdeeb;
+        height: 45px;
+        // &:nth-of-type(even) {
+        //   background-color: #f6f9fc !important;
+        //   width: 100% !important;
+        // }
+
+        .userActionContainer {
+          visibility: hidden;
+        }
+        &:hover {
+          background-color: #d7dfef;
+          .userActionContainer {
+            top: 13px;
+            position: absolute;
+            visibility: visible;
+          }
+        }
+        .tbodyCell {
+          width: max-content;
+          &:first-child {
+            margin: 12px 0 0 10px;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

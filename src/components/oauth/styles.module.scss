@@ -1,0 +1,30 @@
+.oAuth {
+  background: #f4f5f9;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  h2 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: #3b3f4a;
+    text-align: center;
+  }
+  .socials {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    .socialImg {
+      box-shadow: 0px 2px 13px 0px rgba(178, 190, 215, 0.34);
+      border-radius: 10px;
+      background: #ffff;
+      width: 55px;
+      height: 55px;
+      padding: 12px;
+    }
+  }
+}

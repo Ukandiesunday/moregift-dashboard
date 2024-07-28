@@ -1,0 +1,12 @@
+.userActions {
+  display: flex;
+  gap: 12px;
+
+  .actionIcon {
+    color: #3b3f4a;
+  }
+
+  .actionIconDelete {
+    color: #7a7e88;
+  }
+}

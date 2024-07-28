@@ -1,0 +1,16 @@
+.links_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  line-height: 22px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-wrap: nowrap;
+  &:hover {
+    background: #000;
+  }
+  &.active {
+    background: #12aa61;
+  }
+}

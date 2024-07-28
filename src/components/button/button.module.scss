@@ -1,0 +1,30 @@
+.button_primary {
+  display: flex;
+  padding: 9px 15px;
+  color: #f4f5f9;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 24px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 10px;
+  border-radius: 5px;
+  background: #159557;
+  text-wrap: nowrap;
+  height: 42px;
+  &:disabled {
+    background: #cbd1da;
+    cursor: not-allowed;
+  }
+  &:disabled + .icon {
+    display: none;
+  }
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.button_primary:disabled + .icon {
+  display: none;
+}
