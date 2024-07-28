@@ -1,0 +1,88 @@
+.container {
+  display: none;
+  padding: 50px 5%;
+  .title {
+    font-family: "Gochi Hand";
+    color: #159557;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 63px;
+    text-wrap: nowrap;
+    text-align: center;
+    transform: rotate(-0.32deg);
+    margin-bottom: 30px;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    .row {
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+    }
+    .icon {
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 55px;
+      height: 55px;
+      background: #ffffff;
+      box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      &.dark {
+        background: #3b3f4a;
+        box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.05);
+      }
+    }
+
+    .h3 {
+      font-weight: 700;
+      font-size: 18px;
+      color: #3b3f4a;
+      &.dark {
+        color: #cbd1da;
+      }
+    }
+    .p {
+      line-height: 24px;
+      color: #5c6271;
+      font-weight: 500;
+      &.dark {
+        color: #97a0ab;
+      }
+    }
+    .button {
+      align-self: baseline;
+    }
+  }
+}
+@media (min-width: 1140px) {
+  .container {
+    padding: 50px 10%;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    padding: 40px 4% 10px 4%;
+    .title {
+      text-wrap: wrap;
+    }
+    .wrapper {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      .row {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        .button {
+          align-self: center;
+        }
+      }
+    }
+  }
+}

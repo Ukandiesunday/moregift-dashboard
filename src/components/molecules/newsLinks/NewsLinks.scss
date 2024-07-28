@@ -1,0 +1,28 @@
+.news-links-container {
+  display: none;
+  padding: 1px 7%;
+  .news-links {
+    margin: 20px auto;
+    font-family: roboto;
+
+    display: flex;
+    align-items: center;
+    color: grey;
+
+    .h1 {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .news-links-container {
+    background: #ffffff;
+    .news-links {
+      flex-wrap: wrap;
+      padding: 0 4%;
+      gap: 0px;
+      margin: 15px auto;
+    }
+  }
+}

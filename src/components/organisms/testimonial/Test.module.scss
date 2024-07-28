@@ -1,0 +1,116 @@
+.wrapper {
+  padding: 30px 0%;
+  display: none;
+  .h1 {
+    font-family: "Gochi Hand";
+    color: #159557;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 63px;
+    text-wrap: nowrap;
+    text-align: center;
+    transform: rotate(-0.32deg);
+    margin-bottom: 30px;
+    padding-left: 4%;
+  }
+
+  .slide_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding-left: 12%;
+  }
+  .slide {
+    display: flex;
+    align-items: center;
+    .item {
+      position: relative;
+
+      width: 465px !important;
+      padding: 20px;
+      display: flex !important;
+
+      flex-direction: column;
+
+      gap: 20px !important;
+      text-align: center;
+
+      background: #ffffff;
+      box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.07);
+
+      margin: 0px 10px;
+      border-radius: 10px;
+      &.dark {
+        background: #3b3f4a;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.02);
+        border-radius: 10px;
+      }
+      .icon {
+        color: #dac71b;
+        border-radius: 1px;
+        width: 18px;
+        height: 18px;
+      }
+
+      .p {
+        font-weight: 500;
+        font-size: 16px;
+        color: #5c6271;
+        &.dark {
+          color: #cbd1da;
+        }
+      }
+      .h3 {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        color: #8a929c;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .wrapper {
+    padding: 30px 7% 30px 0;
+    .slide {
+      .item {
+        width: 500px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrapper {
+    padding: 30px 10% 30px 0;
+    .slide {
+      .item {
+        gap: 20px !important;
+        width: 600px;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .wrapper {
+    padding: 10px 4% 10px 0px;
+
+    .h1 {
+      text-wrap: wrap;
+    }
+    .slide_button {
+      padding-left: 4%;
+    }
+    .slide {
+      display: flex;
+      .item {
+        margin: 0 auto;
+        width: 95% !important;
+        height: auto;
+        overflow: hidden;
+        text-align: center;
+      }
+    }
+  }
+}

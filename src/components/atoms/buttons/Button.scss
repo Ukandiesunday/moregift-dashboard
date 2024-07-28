@@ -1,0 +1,42 @@
+.nav-btns-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  .nav-items {
+    padding-block: 30px;
+  }
+  .nav-button {
+    padding-block: 30px;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    gap: 10px;
+    cursor: pointer;
+    .icon {
+      color: #5c6271;
+      width: 12px;
+      height: 12px;
+      &.dark {
+        color: #d0d3dd;
+      }
+    }
+    &.grey {
+      color: rgb(175, 174, 174);
+      cursor: not-allowed;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-btns-container {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    .nav-button2 {
+      display: flex;
+      gap: 100px;
+    }
+  }
+}

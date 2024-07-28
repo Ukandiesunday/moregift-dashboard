@@ -1,0 +1,41 @@
+.container {
+  padding: 10px 0 30px 0;
+  display: none;
+  .title {
+    font-family: "Gochi Hand";
+    color: #159557;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 63px;
+    text-wrap: nowrap;
+    text-align: center;
+    transform: rotate(-0.32deg);
+    margin-bottom: 30px;
+  }
+  .wrapper {
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    width: 100%;
+  }
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+@media (max-width: 800px) {
+  .container {
+    padding: 30px 4% 20px 4%;
+
+    .title {
+      text-wrap: wrap;
+    }
+    .wrapper {
+      width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+    }
+  }
+}

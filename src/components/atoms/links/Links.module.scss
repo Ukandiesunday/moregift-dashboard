@@ -1,0 +1,42 @@
+.link_container {
+  display: none;
+  .link {
+    margin-top: 10px;
+    text-decoration: none;
+    font-family: "Open Sans";
+    color: inherit;
+    color: #3b3f4a;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 700;
+    text-wrap: nowrap;
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 6.67px;
+      height: 11.67px;
+    }
+    &:hover {
+      color: rgb(26, 26, 26);
+      &.dark {
+        color: #cbd1da;
+      }
+      span {
+        color: rgb(231, 84, 84);
+      }
+    }
+    span {
+      margin-top: 3px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .link_container {
+    display: none;
+  }
+}

@@ -1,0 +1,58 @@
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 40px auto 70px auto;
+  .wrapper {
+    padding-inline: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .h1 {
+      text-align: center;
+      font-family: "Nunito Sans";
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 50px;
+      margin-top: 40px;
+      color: #3d3f45;
+      margin-top: 40px;
+      &.dark {
+        color: #dbdeeb;
+      }
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      line-height: 26px;
+      font-size: 17px;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        b {
+          padding-right: 8px;
+        }
+        .item2 {
+          padding-left: 30px;
+          display: flex;
+          flex-direction: column;
+          gap: 17px;
+        }
+      }
+    }
+  }
+  a {
+    padding-inline: 3px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    .wrapper {
+      padding: 30px 5%;
+    }
+  }
+}
